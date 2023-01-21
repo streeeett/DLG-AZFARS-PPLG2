@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:rgb(104,223,255);
+        }
+    </style>
+</head>
+<body>
+    <script>
+        class anime{
+            constructor(nama, warna_kulit,nama_pacar){
+           this.nama = nama;
+            this.warna_kulit = warna_kulit;
+            this.nama_pacar = nama_pacar;
+        }
+        
+        }
+
+
+        var anime1 = new anime("yotsuba","putih","azfar");
+        // anime1.nama = "yotsuba"
+        // anime1.warna_kulit = "putih";
+        // anime1.nama_pacar = "azfar"
+
+        var anime2 = new anime("rimuru" , "biru", "azfar");
+        // anime2.nama = "rimuru"
+        // anime2.warna_kulit = "biru";
+        // anime2.nama_pacar = "azfar"
+
+        document.write(`nama : ${anime1.nama} <br/>`);
+        document.write(`warna kulit : ` + anime1.warna_kulit + "<br/>");
+        document.write(`nama pacar : ` + anime1.nama_pacar + "<br/>");
+        document.write("<hr />");
+        document.write(`nama : ${anime2.nama} <br/>`);
+        document.write(`warna kulit : ` + anime2.warna_kulit + "<br/>");
+        document.write(`nama pacar : ` + anime2.nama_pacar + "<br/>");
+
+
+        
+        
+    </script>
+</body>
+</html>
