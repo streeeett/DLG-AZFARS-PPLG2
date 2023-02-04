@@ -12,38 +12,79 @@
     </style>
 </head>
 <body>
+
+    <h1>AZFAR</h1>
     <script>
-        class anime{
-            constructor(nama, warna_kulit,nama_pacar){
-           this.nama = nama;
-            this.warna_kulit = warna_kulit;
-            this.nama_pacar = nama_pacar;
-        }
+        // class anime{
+        //     constructor(nama, warna_kulit,nama_pacar){
+        //    this.nama = nama;
+        //     this.warna_kulit = warna_kulit;
+        //     this.nama_pacar = nama_pacar;
+        // }
         
-        }
+        // }
 
 
-        var anime1 = new anime("yotsuba","putih","azfar");
-        // anime1.nama = "yotsuba"
-        // anime1.warna_kulit = "putih";
-        // anime1.nama_pacar = "azfar"
+        // var anime1 = new anime("yotsuba","putih","azfar");
+        // // anime1.nama = "yotsuba"
+        // // anime1.warna_kulit = "putih";
+        // // anime1.nama_pacar = "azfar"
 
-        var anime2 = new anime("rimuru" , "biru", "azfar");
-        // anime2.nama = "rimuru"
-        // anime2.warna_kulit = "biru";
-        // anime2.nama_pacar = "azfar"
+        // var anime2 = new anime("rimuru" , "biru", "azfar");
+        // // anime2.nama = "rimuru"
+        // // anime2.warna_kulit = "biru";
+        // // anime2.nama_pacar = "azfar"
 
-        document.write(`nama : ${anime1.nama} <br/>`);
-        document.write(`warna kulit : ` + anime1.warna_kulit + "<br/>");
-        document.write(`nama pacar : ` + anime1.nama_pacar + "<br/>");
-        document.write("<hr />");
-        document.write(`nama : ${anime2.nama} <br/>`);
-        document.write(`warna kulit : ` + anime2.warna_kulit + "<br/>");
-        document.write(`nama pacar : ` + anime2.nama_pacar + "<br/>");
+        // document.write(`nama : ${anime1.nama} <br/>`);
+        // document.write(`warna kulit : ` + anime1.warna_kulit + "<br/>");
+        // document.write(`nama pacar : ` + anime1.nama_pacar + "<br/>");
+        // document.write("<hr />");
+        // document.write(`nama : ${anime2.nama} <br/>`);
+        // document.write(`warna kulit : ` + anime2.warna_kulit + "<br/>");
+        // document.write(`nama pacar : ` + anime2.nama_pacar + "<br/>");
 
-
+    //     class kucing {
+    //         constructor(){
+    //             this.kaki = 4
+    //             this.telinga = 2 
+    //         }
+    //         warna = "orange"
+    //         warna_mata = "biru"
+    //         ekor = "panjang"
+            
         
+
+    //     jalan(){
+    //         return "jalan dgn 4 kaki" 
+    //     }
         
+    // }
+    // class anakkucing extends kucing{    }
+
+    // var anakkucing1 = new anakkucing
+
+    // document.write('warna anak kucing :' + anakkucing1.warna + "<br />")
+    // document.write('warna mata kucing :' +anakkucing1.warna_mata + "<br />")
+    // document.write('ekor :' +anakkucing1.ekor + "<br />")
+   
+
+
+    class sekolah {
+        sekolah = "smk muhammdadiyah"
+        alamat_sekolah = "jalan kota baru"
+    }
+    class kelas extends sekolah{
+        mapel_produktif = "dlg"
+         jurusan = "pplg" 
+    }
+
+    var PPLG = new kelas()
+
+    document.write('sekolah :' +PPLG.sekolah + "<br />")
+    document.write('alamat sekolah :' +PPLG.alamat_sekolah + "<br />")
+    document.write('jurusan :'+PPLG.jurusan + "<br />")
+    document.write('mapel :' +PPLG.mapel_produktif + "<br />")
+    
     </script>
 </body>
 </html>
