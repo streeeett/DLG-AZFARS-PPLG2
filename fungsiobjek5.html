@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+        class bangun_datar {
+         keliling(){
+
+         }
+         luas(){
+
+         }
+    }
+    
+    class persegi extends bangun_datar{
+        sisi;
+        keliling(){
+            return this.sisi + this.sisi + this.sisi + this.sisi
+        }
+        luas(){
+           return this.sisi * this.sisi
+        } 
+    }
+    var persegi1 = new persegi( )
+    persegi1.sisi = 4
+
+    class persegi_panjang extends bangun_datar{
+        panjang
+        lebar
+        keliling(){
+            return 2 * this.panjang + this.lebar 
+        }
+        luas(){
+           return   this.panjang * this.lebar
+        } 
+    }
+    var persegi_panjang1 = new persegi_panjang()
+    persegi_panjang1.lebar = 2 
+    persegi_panjang1.panjang = 5 
+
+    class segitiga extends bangun_datar{
+        alas
+        tinggi
+        sisi
+        keliling(){
+            return this.sisi + this.sisi + this.sisi 
+        }
+        luas(){
+           return 0.5 * this.alas * this.tinggi
+        } 
+    }
+   var segitiga1 = new segitiga()
+   segitiga1.alas = 4
+   segitiga1.sisi = 3
+   segitiga1.tinggi = 4
+    
+ 
+    document.write('luas persegi :' +persegi1.luas()    + "<br />")
+    document.write('keliling persegi :' +persegi1.keliling()    + "<br />")
+    document.write("<hr />");
+    document.write('luas persegi panjang :' +persegi_panjang1.luas()    + "<br />")
+    document.write('keliling persegi panjang:' +persegi_panjang1.keliling()    + "<br />")
+    document.write("<hr />");
+    document.write('luas segi3 :' +segitiga1.luas()    + "<br />")
+    document.write('keliling segi3:' +segitiga1.keliling()    + "<br />")
+   </script> 
+</body>
+</html>
