@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class user {
+        #username
+        #email
+        #password
+        #umur
+
+        set username(name){
+            this.#username = name
+            
+        }
+        get username(){
+            return this.#username
+        }
+
+        set email(mail){
+            this.#email = mail
+        }
+        get email(){
+           return this.#email 
+        }
+
+        set password(pw){
+            this.#password = pw
+        }
+        get password(){
+            return this.#password
+        }
+
+        set umur(umur){
+            this.#umur = umur
+        }
+        get umur(){
+            return this.#umur
+        }
+    }
+
+    var user1 = new user()
+    user1.username = "asep"
+    user1.email = "asepsamsudin@gmail.com"
+    user1.password = "**********"
+    user1.umur = 26
+
+    var user2 = new user()
+    user2.username = "bang mesi"
+    user2.email = "bangmesi@gmail.com"
+    user2.password = "**********"
+    user2.umur = 35
+
+    document.write('user :' +user1.username + "<br />")
+    document.write('email :' +user1.email + "<br />")
+    document.write('password :' +user1.password + "<br />")
+    document.write('umur :' +user1.umur + "<br />")
+    document.write("<hr />");
+    document.write('user :' +user2.username + "<br />")
+    document.write('email :' +user2.email + "<br />")
+    document.write('password :' +user2.password + "<br />")
+    document.write('umur :' +user2.umur + "<br />")
+    </script>
+</body>
+</html>
