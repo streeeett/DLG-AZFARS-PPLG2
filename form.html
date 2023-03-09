@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registrasi</title>
+    <style>
+        fieldset{
+background-color: rgb(57, 196, 227);            
+        }
+    </style>
+</head>
+
+<body>
+    <form action="registrasi.php" method="POST">
+        <fieldset>
+            <legend>registrasi</legend>
+      <p>
+        <label>nama</label>
+        <input type="text" name="text" placeholder="......." />
+      </p>
+
+      <p>
+        <label>Umur:</label>
+        <input type="number" min="10" max="90" name="umur" />
+    </p>
+
+      <p>
+        <label>Tanggal Lahir:</label>
+        <input type="date" name="tanggal" />
+    </p>
+
+      <p>
+        <label>Jenis kelamin:</label>
+        <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+        <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+    </p>
+
+      <label>Agama:</label>
+            <select name="agama">
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="hindu">Hindu</option>
+                <option value="budha">Budha</option>
+            </select>
+     
+
+      <p>
+        <label>kelas:</label>
+        <select name="agama">
+            <option value="islam">PPLG1</option>
+            <option value="kristen">PPLG2</option>
+           
+        </select>
+      </p>
+
+      
+      <p>
+        <label>kolor</label>
+        <input type="color" name="kolor" placeholder="kolor" />
+      </p>
+</p>
+     
+
+      <p>
+        <label>Email</label>
+        <input type="email" name="email" placeholder="email....." />
+      </p>
+
+      <p>
+        <label>password</label>
+        <input type="password" name="password" placeholder="....." />
+      </p>
+
+      <p>
+        <input type="submit" name="submit" value="buat" />
+
+       
+    </form>
+</fieldset>
+</body>
+</html>
