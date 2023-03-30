@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         class produk {
+         nama_produk = "kisah alok sedih"
+         harga = 12000
+         jumlah = 5
+    }
+
+    class buku extends produk{
+        ISBN = 201802
+        pengarang = "bocah pabji"
+        penerbit = "garena "
+
+        peminjaman(){
+            return "meminjam buku"
+        
+        }
+        pengembalian(){
+            return "mengembalikan buku"
+        }
+    }
+
+    var buku1 = new buku()
+
+    document.write('nama buku :' +buku1.nama_produk    + "<br />")
+    document.write('harga :' +buku1.harga    + "<br />")
+    document.write('jumlah :' +buku1.jumlah    + "<br />")
+    document.write('ISBN :' +buku1.ISBN    + "<br />")
+    document.write('nama pengarang :' +buku1.pengarang    + "<br />")
+    document.write('penerbit :' +buku1.penerbit    + "<br />")
+    document.write('kegiatan :' +buku1.peminjaman()    + "<br />")
+    document.write('kegiatan :' +buku1.pengembalian()    + "<br />")
+    </script>
+</body>
+</html>
